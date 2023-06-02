@@ -1,0 +1,22 @@
+h1 {
+    font-size: 40px;
+    font-family: sans-serif;
+    color: #c39d6b;
+}
+h2 {
+    color: brown;
+}
+
+.highlight {
+    text-transform: uppercase;
+    background-color: palevioletred;
+}
+
+.cake {
+    color: brown;
+}
+
+.about-main p {
+    font-family: sans-serif;
+    background-color: papayawhip;
+}
