@@ -6,17 +6,68 @@
     font-family: Tinos;
 }
 
-body {
-    background-color: #006855;
-    overflow: auto;
+:root {
+    --primary-color: #006855;
+    --secondary-color: #00af8d;
+    --tertiary-color: #eddfd4;
 }
+
+/* typography */
 
 h2 {
     font-size: 3rem;
 }
 
+.menu-icon {
+    font-size: 40px;
+}
+
+.banner {
+    font-size: 4rem;
+}
+
+.location-banner-content h2 {
+    font-size: 2.5rem;
+}
+
+.location-banner-content p {
+    font-size: 1.3rem;
+    line-height: 1.5em;
+}
+
+/* colors */
+
+body {
+    background-color: var(--primary-color);
+}
+
 nav {
-    background-color: #006855;
+    background-color: var(--primary-color);
+}
+
+.menu-icon {
+    color: #ef5518;
+}
+
+.banner {
+    color: var(--secondary-color);
+}
+
+.banner-about-us {
+    color: var(--secondary-color);
+}
+
+.location-banner-content {
+    color: var(--primary-color);
+}
+
+/* layout */
+
+body {
+    overflow: auto;
+}
+
+nav {
     margin: 10px;
     padding: 5px;
 }
@@ -29,13 +80,9 @@ nav {
 
 .menu-icon {
     float: right;
-    color: #ef5518;
-    font-size: 40px;
 }
 
 .banner {
-    color: #00af8d;
-    font-size: 4rem;
     padding: 2vw;
 }
 
@@ -55,7 +102,6 @@ nav {
 
 .banner-about-us {
     text-align: center;
-    color: #00af8d;
     padding: 0 1em;
     padding-top: 3em;
     padding-bottom: 4em;
@@ -102,7 +148,6 @@ figure img {
 
 .location-banner-content {
     text-align: center;
-    color: #006855;
 }
 
 .location-banner-content article {
@@ -110,18 +155,14 @@ figure img {
 }
 
 .location-banner-content h2 {
-    font-size: 2.5rem;
     padding-bottom: .6em;
 }
 
-.location-banner-content p {
-    font-size: 1.3rem;
-    line-height: 1.5em;
-}
+/* component */
 
 .location-banner-content button {
-    background-color: #006855;
-    color: #eddfd4;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
     border: none;
     font-size: xx-large;
     padding: 0.5em 2.8em;
