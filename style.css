@@ -3,7 +3,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Tinos;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
 }
 
 :root {
@@ -31,7 +37,7 @@ h2 {
 }
 
 .banner {
-    font-size: 4rem;
+    font-size: 17vw;
 }
 
 .location-banner-content h2 {
@@ -154,6 +160,15 @@ nav {
     margin-bottom: 1.5rem;
 }
 
+@media (min-width: 650px) {
+    .banner {
+        padding: 4vw;
+    }
+    .banner span {
+        font-size: 15vw;
+    }
+}
+
 .banner-img img {
     width: 100%;
     height: 100%;
@@ -161,7 +176,7 @@ nav {
 
 .banner-about-us {
     text-align: center;
-    padding: 0 1em;
+    padding: 0 2.5em;
     padding-top: 3em;
     padding-bottom: 4em;
 }
@@ -174,20 +189,40 @@ nav {
     line-height: 1.5em;
 }
 
+@media (min-width: 1024px) {
+    .banner-about-us {
+        padding: 4em 14em;
+    }
+
+    .banner-about-us h2 {
+        font-size: 4rem;
+    }
+
+    .banner-about-us p {
+        font-size: 1.9rem;
+    }
+}
+
 figure {
     position: relative;
 }
 
 figure img {
     position: absolute;
-    width: 40vw;
+    width: 180px;
     top: -80px;
-    left: 200px;
+    right: 20px;
     z-index: 1;
 }
 
 .location-banner-bg {
     position: relative;
+    background-size: cover;
+}
+
+.location-banner-bg #background {
+    height: 100%;
+    background-size: cover;
 }
 
 .location-banner-bg img {
@@ -216,6 +251,27 @@ figure img {
 .location-banner-content h2 {
     padding-bottom: .6em;
 }
+
+@media (min-width: 765px) {
+    .location-banner-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2.5em;
+    }
+
+    .location-banner-content img {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .location-banner-content img {
+        width: 50%;
+    }
+}
+
+
 
 /* component */
 
